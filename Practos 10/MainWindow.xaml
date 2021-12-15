@@ -1,0 +1,17 @@
+﻿<Window x:Class="Practos_10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practos_10"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Расчет" Click="calculation_button" HorizontalAlignment="Left" Margin="208,237,0,0" VerticalAlignment="Top" Width="72" RenderTransformOrigin="0.51,0.53"/>
+        <ListBox x:Name="listBox1"  d:ItemsSource="{d:SampleData ItemCount=5}" Margin="117,42,556,259"/>
+        <TextBox HorizontalAlignment="Left" Margin="318,175,0,0" TextWrapping="Wrap" Text="" x:Name="valueList" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Перерасчет " HorizontalAlignment="Left" Margin="419,315,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBox x:Name="number" HorizontalAlignment="Left" Margin="595,253,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
